@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#app {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#authForm,
+#recipeForm {
+    padding: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff4f41;
+}
+
+#recipes {
+    padding: 20px;
+}
+
+.recipe {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.recipe img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.recipe h3 {
+    margin: 0;
+}
+
+#search {
+    padding: 20px;
+}
+
+.recipe-actions {
+    margin-left: auto;
+}
+
+.recipe-actions button {
+    margin-left: 10px;
+}
+
+button.editBtn {
+    background: #4caf50;
+}
+
+button.editBtn:hover {
+    background: #45a049;
+}
+
+button.deleteBtn {
+    background: #f44336;
+}
+
+button.deleteBtn:hover {
+    background: #e53935;
+}
+
+#content {
+    display: block;
+    margin-top: 1rem;
+}
+#addRecipeBtn{
+    margin-left: 1.2rem;
+}

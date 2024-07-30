@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>My Recipe Organizer</h1>
+            <div id="auth">
+                <button id="loginBtn">Login</button>
+                <button id="signupBtn">Sign Up</button>
+                <button id="logoutBtn" style="display:none;">Logout</button>
+            </div>
+        </header>
+        <div id="authForm" style="display:none;">
+            <h2 id="authTitle">Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="authSubmitBtn">Submit</button>
+        </div>
+        <div id="content" style="display:none;">
+            <button id="addRecipeBtn">Add Recipe</button>
+            <div id="search">
+                <input type="text" id="searchInput" placeholder="Search Recipes">
+            </div>
+            <div id="recipes"></div>
+        </div>
+        <div id="recipeForm" style="display:none;">
+            <h2 id="recipeFormTitle">Add Recipe</h2>
+            <input type="text" id="recipeTitle" placeholder="Title">
+            <input type="text" id="recipeCategory" placeholder="Category">
+            <textarea id="recipeInstructions" placeholder="Instructions"></textarea>
+            <input type="file" id="recipeImage">
+            <button id="saveRecipeBtn">Save</button>
+            <button id="cancelRecipeBtn">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
